@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Max Selfbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="admin.js" defer></script>
+    <link rel="icon" href="https://media.discordapp.net/attachments/1254070628236001364/1254070697060470824/CompressJPEG.online_512x512_image.jpg?ex=667827d9&is=6676d659&hm=e3a8bd08944f05bbe93e628508849c965ed430a03e93bbe6590687360ffe4372&=&format=webp" type="image/x-icon">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="logo">
+                <img src="https://media.discordapp.net/attachments/1254070628236001364/1254070697060470824/CompressJPEG.online_512x512_image.jpg?ex=667827d9&is=6676d659&hm=e3a8bd08944f05bbe93e628508849c965ed430a03e93bbe6590687360ffe4372&=&format=webp" alt="Max Selfbot Logo">
+                <span>Max Selfbot</span>
+            </div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#utilities">Utilities</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Admin Panel</h1>
+            <p>Manage download links for Max Selfbot</p>
+        </div>
+    </header>
+
+    <section id="admin">
+        <h2>Update Download Links</h2>
+        <form id="admin-form">
+            <div class="form-group">
+                <label for="free-link">Free Version Link</label>
+                <input type="url" id="free-link" required>
+            </div>
+            <div class="form-group">
+                <label for="paid-link">Paid Version Link</label>
+                <input type="url" id="paid-link" required>
+            </div>
+            <button type="submit" class="btn">Update Links</button>
+        </form>
+        <p id="status-message"></p>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>For more information or support, contact us at: <a href="mailto:support@example.com">support@example.com</a></p>
+        <p>&copy; 2024 Max Selfbot. All rights reserved.</p>
+    </footer>
+</body>
+</html>

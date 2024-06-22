@@ -282,29 +282,22 @@ footer {
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+    nav {
+        display: block; /* Ensure nav is displayed as a block element */
+        position: static; /* Override any sticky or absolute positioning */
         background: #2c2c2c;
-        width: 100%;
-        position: absolute;
-        top: 60px; /* Adjust based on your header height */
-        left: -100%;
-        transition: left 0.3s;
-        z-index: 1001; /* Ensure it's above other content */
+        padding: 1rem;
     }
 
-    nav ul.active {
-        left: 0;
+    nav ul {
+        display: block; /* Ensure ul is displayed as a block element */
+        margin: 0;
+        padding: 0;
     }
 
     nav ul li {
-        margin: 1rem 0;
-        text-align: center;
-    }
-
-    .features-container {
-        flex-direction: column;
+        display: block; /* Display li elements as block for vertical stacking */
+        margin: 10px 0;
     }
 }
-
 

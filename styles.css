@@ -281,3 +281,28 @@ footer {
     color: green;
 }
 
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        background: #2c2c2c;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust this based on your header height */
+        left: -100%;
+        transition: left 0.3s;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .features-container {
+        flex-direction: column;
+    }
+}
+
